@@ -1,0 +1,9 @@
+<div *ngIf="nameIwanos.length > 0 ; else noData">
+ <div *ngFor="let name of nameIwanos">
+    <p>{{ name.name }}</p>
+ </div>
+</div>
+
+<ng-template #noData>
+  <div>No hay elementos, para mostrar</div>
+</ng-template>
