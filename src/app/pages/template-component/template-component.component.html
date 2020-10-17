@@ -1,9 +1,15 @@
-<div *ngIf="nameIwanos.length > 0 ; else noData">
- <div *ngFor="let name of nameIwanos" class="border text-sm-center">
-    <p>{{ name.name }}</p>
- </div>
+<div class="container-fluid">
+  <div class="row" style="background-color: lightblue">
+    <div class="col-6 align-content-center" style="background-color: bisque">
+      <h2 class="card-title">Componente basico</h2>
+      <div *ngIf="nameIwanos.length > 0 ; else noData">
+        <div *ngFor="let name of nameIwanos" class="border text-sm-center">
+          <p>{{ name.name }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
 
-  <button class="btn btn-danger">Test</button>
 </div>
 
 <ng-template #noData>
